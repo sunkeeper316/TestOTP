@@ -55,6 +55,60 @@ class NetworkManage : NSObject {
             }
         }
     }
+    func verifycode(m_user_name:String , verify_code:String) -> Observable<ResponseData> {
+        var log : [String:String] = [String:String]()
+        log["m_user_name"] = m_user_name
+        log["verify_code"] = verify_code
+        print(m_user_name)
+        return Observable<ResponseData>.create { [unowned self] (observer) -> Disposable in
+            let task = URLSession.shared.dataTask(with: setRequest(
+                                                    URL(string:getApiAction(actionKey: .verifycode))! ,log)) {data, _, error in
+                guard error == nil else {
+                    observer.onError(error!)
+                    print("error \(error!.localizedDescription)")
+                    return
+                }
+                if let data = data {
+                    if let result = try? decoder.decode(ResponseData.self, from: data) {
+                        observer.onNext(result)
+                        observer.onCompleted()
+                    }
+                }
+            }
+            task.resume()
+            return Disposables.create{
+                print("結束register")
+                task.cancel()
+            }
+        }
+    }
+    func resendverifycode(m_user_name:String , m_lang:String) -> Observable<ResponseData> {
+        var log : [String:String] = [String:String]()
+        log["m_user_name"] = m_user_name
+        log["m_lang"] = m_lang
+        print(m_user_name)
+        return Observable<ResponseData>.create { [unowned self] (observer) -> Disposable in
+            let task = URLSession.shared.dataTask(with: setRequest(
+                                                    URL(string:getApiAction(actionKey: .resendverifycode))! ,log)) {data, _, error in
+                guard error == nil else {
+                    observer.onError(error!)
+                    print("error \(error!.localizedDescription)")
+                    return
+                }
+                if let data = data {
+                    if let result = try? decoder.decode(ResponseData.self, from: data) {
+                        observer.onNext(result)
+                        observer.onCompleted()
+                    }
+                }
+            }
+            task.resume()
+            return Disposables.create{
+                print("結束register")
+                task.cancel()
+            }
+        }
+    }
     func register(m_user_name:String , m_password :String? , fb_uid :String?) -> Observable<ResponseData>{
         var log : [String:String] = [String:String]()
         if let m_password = m_password {

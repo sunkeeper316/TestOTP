@@ -7,7 +7,9 @@ import FlagPhoneNumber
 class ViewController: UIViewController {
 
     @IBOutlet weak var tfPhone: FPNTextField!
-    @IBOutlet weak var tfTestOTP: UITextField!
+    @IBOutlet weak var tfMail: UITextField!
+    
+    
     @IBOutlet weak var tfLang: UITextField!
     
     var isPhoneValid = false
@@ -15,7 +17,7 @@ class ViewController: UIViewController {
     let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        tfTestOTP.textContentType = .oneTimeCode
+//        tfMail.textContentType = .oneTimeCode
         tfPhone.setCountries(including: [.US,.CN,.TW,.AU,.GB,.AE,.CA,.HK,.JP,.KH,.KR,.MO,.MY,.SG,.TH,.VN,.ID,.IN,.PH])
         tfPhone.delegate = self
         // Do any additional setup after loading the view.
@@ -30,21 +32,52 @@ class ViewController: UIViewController {
         let phone = tfPhone.text!
         let lang = tfLang.text!
         if isPhoneValid {
+            let title = "請輸入簡訊驗證碼"
+            let message = "您輸入的電話號碼:\(phone)"
             NetworkManage.shared.newRegister(m_user_name: phone,m_lang: lang ).subscribe(onNext : { [unowned self] responseData in
                 
                 print(responseData.error)
                 
             }).disposed(by: disposeBag)
-            let alert = UIAlertController(title: "請輸入簡訊驗證碼", message: "", preferredStyle: .alert)
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alert.addTextField { textField in
                 textField.placeholder = "Input OTP"
                 textField.textContentType = .oneTimeCode
+                textField.keyboardType = .numberPad
             }
-            let action = UIAlertAction(title: "OK", style: .default) { action in
+            let action = UIAlertAction(title: "OK", style: .default) { [unowned self] action in
+//                present(alert, animated: true, completion: nil)
+                let code = alert.textFields!.first!.text!
+                NetworkManage.shared.verifycode(m_user_name: phone, verify_code: code).subscribe(onNext: { [unowned self] responseData in
+                    if responseData.error == 0 {
+                        let successAlert = UIAlertController(title: "註冊成功", message: "", preferredStyle: .alert)
+                        
+                        DispatchQueue.main.async {
+                            present(successAlert, animated: true, completion: nil)
+                        }
+                        
+                        
+                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                            dismiss(animated: true, completion: nil)
+                            self.view.endEditing(true)
+                        }
+                    }else{
+                        DispatchQueue.main.async {
+                            alert.message = "驗證碼輸入錯誤"
+                            present(alert, animated: true, completion: nil)
+                        }
+                        
+                    }
+                }).disposed(by: disposeBag)
+            }
+            let actionReSend = UIAlertAction(title: "重新發送", style: .default) { [unowned self] action in
                 
+                alert.message = "您輸入的電話號碼:\(phone)\n已重新發送"
+                present(alert, animated: true, completion: nil)
             }
-            
+            alert.addAction(actionReSend)
             alert.addAction(action)
+            
             present(alert, animated: true, completion: nil)
             
         }else{
@@ -56,11 +89,37 @@ class ViewController: UIViewController {
             present(alert, animated: true, completion: nil)
             
         }
-        self.view.endEditing(true)
+        
         
     }
     
+    @IBAction func clickEmail(_ sender: UIButton) {
+        let mail = tfMail.text!
+        let lang = tfLang.text!
+        NetworkManage.shared.newRegister(m_user_name: mail,m_lang: lang ).subscribe(onNext : { [unowned self] responseData in
+            
+            print(responseData.error)
+            
+        }).disposed(by: disposeBag)
+        let alert = UIAlertController(title: "請輸入簡訊驗證碼", message: "", preferredStyle: .alert)
+        alert.addTextField { textField in
+            textField.placeholder = "Input OTP"
+            textField.textContentType = .oneTimeCode
+        }
+        let action = UIAlertAction(title: "OK", style: .default) { action in
+            
+        }
+        let actionReSend = UIAlertAction(title: "重新發送", style: .default) { action in
+            
+        }
+        
+        alert.addAction(action)
+        alert.addAction(actionReSend)
+        present(alert, animated: true, completion: nil)
+        self.view.endEditing(true)
+    }
 }
+
 extension ViewController : FPNTextFieldDelegate {
     
     func fpnDidSelectCountry(name: String, dialCode: String, code: String) {
@@ -74,10 +133,24 @@ extension ViewController : FPNTextFieldDelegate {
         }else{
             textField.textColor = .red
         }
+        
+//        print(
+//            isValid,
+//            textField.getFormattedPhoneNumber(format: .E164) ?? "E164: nil",
+//            textField.getFormattedPhoneNumber(format: .International) ?? "International: nil",
+//            textField.getFormattedPhoneNumber(format: .National) ?? "National: nil",
+//            textField.getFormattedPhoneNumber(format: .RFC3966) ?? "RFC3966: nil",
+//            textField.getRawPhoneNumber() ?? "Raw: nil"
+//        )
     }
     
     func fpnDisplayCountryList() {
-        
+//        let navigationViewController = UINavigationController(rootViewController: listController)
+//
+//        listController.title = "Countries"
+//        listController.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(dismissCountries))
+//
+//        self.present(navigationViewController, animated: true, completion: nil)
     }
     
     

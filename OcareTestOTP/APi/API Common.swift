@@ -10,6 +10,8 @@ let apiUrl = "https://www.oserio.com/testcht/appapi.php?action=".addingPercentEn
 enum Action : String{
     case
     newLogin = "newlogin",
+    verifycode = "verifycode",
+    resendverifycode = "resendverifycode",
     Login = "login",
     Register = "register",
     Forget = "forget",
@@ -34,6 +36,10 @@ enum Action : String{
 func getApiAction(actionKey: Action) -> String{
     switch actionKey {
     case .newLogin:
+        return apiUrl! + actionKey.rawValue
+    case .verifycode:
+        return apiUrl! + actionKey.rawValue
+    case .resendverifycode:
         return apiUrl! + actionKey.rawValue
     case .Login:
         return apiUrl! + actionKey.rawValue

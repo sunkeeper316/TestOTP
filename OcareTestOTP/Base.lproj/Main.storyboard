@@ -33,20 +33,29 @@
                                     <action selector="clickSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWO-R7-AF2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CUQ-wq-DTR">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CUQ-wq-DTR">
                                 <rect key="frame" x="30" y="198" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="m_lang" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBI-Cc-sCD">
-                                <rect key="frame" x="30" y="282" width="354" height="34"/>
+                                <rect key="frame" x="30" y="342" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epa-Te-drN">
+                                <rect key="frame" x="30" y="262" width="354" height="30"/>
+                                <state key="normal" title="MailSend"/>
+                                <connections>
+                                    <action selector="clickEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F0f-Bo-q0y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Epa-Te-drN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1dd-LS-aCA"/>
+                            <constraint firstItem="Epa-Te-drN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BXE-72-uoY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PAK-Yo-zYc" secondAttribute="trailing" constant="30" id="KIS-wq-Kgb"/>
                             <constraint firstItem="8xr-ZO-XN5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="KaC-9b-jVc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rBI-Cc-sCD" secondAttribute="trailing" constant="30" id="LbY-WI-MpI"/>
@@ -55,18 +64,20 @@
                             <constraint firstItem="rBI-Cc-sCD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="YVQ-hf-ovE"/>
                             <constraint firstItem="CUQ-wq-DTR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="a9b-pB-MnA"/>
                             <constraint firstItem="8xr-ZO-XN5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aFZ-wb-dxy"/>
+                            <constraint firstItem="Epa-Te-drN" firstAttribute="top" secondItem="CUQ-wq-DTR" secondAttribute="bottom" constant="30" id="anE-dB-itB"/>
                             <constraint firstItem="PAK-Yo-zYc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eXq-LZ-xSy"/>
-                            <constraint firstItem="rBI-Cc-sCD" firstAttribute="top" secondItem="CUQ-wq-DTR" secondAttribute="bottom" constant="50" id="kkU-eM-xA8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CUQ-wq-DTR" secondAttribute="trailing" constant="30" id="mIi-rQ-k6n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Epa-Te-drN" secondAttribute="trailing" constant="30" id="oRa-HU-YlF"/>
                             <constraint firstItem="rBI-Cc-sCD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uTN-hU-FhQ"/>
                             <constraint firstItem="CUQ-wq-DTR" firstAttribute="top" secondItem="PAK-Yo-zYc" secondAttribute="bottom" constant="30" id="wZb-kj-0RW"/>
+                            <constraint firstItem="rBI-Cc-sCD" firstAttribute="top" secondItem="Epa-Te-drN" secondAttribute="bottom" constant="50" id="xXO-Wq-RK9"/>
                             <constraint firstItem="PAK-Yo-zYc" firstAttribute="top" secondItem="8xr-ZO-XN5" secondAttribute="bottom" constant="30" id="xnB-Tf-QlA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tfLang" destination="rBI-Cc-sCD" id="gxh-11-joI"/>
+                        <outlet property="tfMail" destination="CUQ-wq-DTR" id="fbf-Rh-AIh"/>
                         <outlet property="tfPhone" destination="Hpi-Sg-YN3" id="jtW-DA-fgR"/>
-                        <outlet property="tfTestOTP" destination="CUQ-wq-DTR" id="m1p-Ri-8Fz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
