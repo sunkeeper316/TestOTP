@@ -9,10 +9,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfPhone: FPNTextField!
     @IBOutlet weak var tfMail: UITextField!
     
-    
     @IBOutlet weak var tfLang: UITextField!
     
     var isPhoneValid = false
+    
+    var timer: Timer?
+    var alert:UIAlertController!
     
     let disposeBag = DisposeBag()
     override func viewDidLoad() {
@@ -39,7 +41,7 @@ class ViewController: UIViewController {
                 print(responseData.error)
                 
             }).disposed(by: disposeBag)
-            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alert.addTextField { textField in
                 textField.placeholder = "Input OTP"
                 textField.textContentType = .oneTimeCode
@@ -73,6 +75,13 @@ class ViewController: UIViewController {
             let actionReSend = UIAlertAction(title: "重新發送", style: .default) { [unowned self] action in
                 
                 alert.message = "您輸入的電話號碼:\(phone)\n已重新發送"
+                alert.actions.forEach { action in
+                    if action.title == "重新發送" {
+                        action.isEnabled = false
+                        countdown = 5
+                        runCountDown()
+                    }
+                }
                 present(alert, animated: true, completion: nil)
             }
             alert.addAction(actionReSend)
@@ -91,6 +100,33 @@ class ViewController: UIViewController {
         }
         
         
+    }
+    func runCountDown(){
+        if timer == nil {
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(countDownTimer), userInfo: nil, repeats: true)
+        }
+    }
+
+    @objc func countDownTimer(){
+        if countdown > 0 {
+            countdown -= 1
+            print("countdown\(countdown)")
+            alert.actions.forEach { action in
+                if action.isEnabled == false {
+                    action.setValue("還有\(countdown)秒", forKey: "title")
+                }
+            }
+            
+        }else{
+            alert.actions.forEach { action in
+                if action.isEnabled == false {
+                    action.setValue("重新發送", forKey: "title")
+                    action.isEnabled = true
+                }
+            }
+            timer?.invalidate()
+            timer = nil
+        }
     }
     
     @IBAction func clickEmail(_ sender: UIButton) {

@@ -33,6 +33,7 @@
 		4D39671126A529D60069F732 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39670B26A529D60069F732 /* GetData.swift */; };
 		4D39671226A529D60069F732 /* GetBpressureindexData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39670C26A529D60069F732 /* GetBpressureindexData.swift */; };
 		4D39671326A529D60069F732 /* GetAiogetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39670D26A529D60069F732 /* GetAiogetData.swift */; };
+		4DEE6C4B26A94923005783B1 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE6C4A26A94923005783B1 /* Global.swift */; };
 		68999CC54ADD1C61F17011CB /* Pods_OcareTestOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B7983426E2C5A7228782AC /* Pods_OcareTestOTP.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		4DEE6C4726A908A0005783B1 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		4DEE6C4826A908B0005783B1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		4DEE6C4926A908B1005783B1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4DEE6C4A26A94923005783B1 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		704301AF268F7B4BD150D013 /* Pods-OcareTestOTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OcareTestOTP.release.xcconfig"; path = "Target Support Files/Pods-OcareTestOTP/Pods-OcareTestOTP.release.xcconfig"; sourceTree = "<group>"; };
 		F0B7983426E2C5A7228782AC /* Pods_OcareTestOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OcareTestOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F506E4CC86DB7918C4669CA8 /* Pods-OcareTestOTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OcareTestOTP.debug.xcconfig"; path = "Target Support Files/Pods-OcareTestOTP/Pods-OcareTestOTP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				4D3966E026A51E300069F732 /* LaunchScreen.storyboard */,
 				4D3966E326A51E300069F732 /* Info.plist */,
 				4D3966DB26A51E2C0069F732 /* OcareTestOTP.xcdatamodeld */,
+				4DEE6C4A26A94923005783B1 /* Global.swift */,
 			);
 			path = OcareTestOTP;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				4D39671126A529D60069F732 /* GetData.swift in Sources */,
 				4D3966D726A51E2C0069F732 /* ViewController.swift in Sources */,
 				4D39670626A529C20069F732 /* WeightindexuploadBody.swift in Sources */,
+				4DEE6C4B26A94923005783B1 /* Global.swift in Sources */,
 				4D39671326A529D60069F732 /* GetAiogetData.swift in Sources */,
 				4D39670F26A529D60069F732 /* GetCommonindexData.swift in Sources */,
 				4D3966ED26A529A00069F732 /* NetworkManage.swift in Sources */,
