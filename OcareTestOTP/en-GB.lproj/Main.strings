@@ -1,0 +1,9 @@
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "Hpi-Sg-YN3"; */
+"Hpi-Sg-YN3.placeholder" = "Phone";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "PAK-Yo-zYc"; */
+"PAK-Yo-zYc.normalTitle" = "Login";
+
+/* Class = "UITextField"; placeholder = "m_lang"; ObjectID = "rBI-Cc-sCD"; */
+"rBI-Cc-sCD.placeholder" = "m_lang";

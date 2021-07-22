@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,26 @@
 		4D3966DD26A51E2C0069F732 /* OcareTestOTP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966DB26A51E2C0069F732 /* OcareTestOTP.xcdatamodeld */; };
 		4D3966DF26A51E300069F732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3966DE26A51E300069F732 /* Assets.xcassets */; };
 		4D3966E226A51E300069F732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3966E026A51E300069F732 /* LaunchScreen.storyboard */; };
+		4D3966ED26A529A00069F732 /* NetworkManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966EC26A529A00069F732 /* NetworkManage.swift */; };
+		4D3966F026A529AB0069F732 /* API Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966EE26A529AA0069F732 /* API Common.swift */; };
+		4D3966F126A529AB0069F732 /* APIFunctione.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966EF26A529AB0069F732 /* APIFunctione.swift */; };
+		4D3966FD26A529C20069F732 /* AiodelBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966F326A529BF0069F732 /* AiodelBody.swift */; };
+		4D3966FE26A529C20069F732 /* CommonindexuploadBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966F426A529C00069F732 /* CommonindexuploadBody.swift */; };
+		4D3966FF26A529C20069F732 /* PassmodifyBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966F526A529C00069F732 /* PassmodifyBody.swift */; };
+		4D39670026A529C20069F732 /* AiogetuploadBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966F626A529C00069F732 /* AiogetuploadBody.swift */; };
+		4D39670126A529C20069F732 /* DatamodifyBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966F726A529C00069F732 /* DatamodifyBody.swift */; };
+		4D39670226A529C20069F732 /* GoalindexmodifyBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966F826A529C10069F732 /* GoalindexmodifyBody.swift */; };
+		4D39670326A529C20069F732 /* GetDataBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966F926A529C10069F732 /* GetDataBody.swift */; };
+		4D39670426A529C20069F732 /* ForgetBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966FA26A529C10069F732 /* ForgetBody.swift */; };
+		4D39670526A529C20069F732 /* BpressureindexuploadBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966FB26A529C10069F732 /* BpressureindexuploadBody.swift */; };
+		4D39670626A529C20069F732 /* WeightindexuploadBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3966FC26A529C20069F732 /* WeightindexuploadBody.swift */; };
+		4D39670E26A529D60069F732 /* GetWeightindexData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39670826A529D50069F732 /* GetWeightindexData.swift */; };
+		4D39670F26A529D60069F732 /* GetCommonindexData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39670926A529D60069F732 /* GetCommonindexData.swift */; };
+		4D39671026A529D60069F732 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39670A26A529D60069F732 /* ResponseData.swift */; };
+		4D39671126A529D60069F732 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39670B26A529D60069F732 /* GetData.swift */; };
+		4D39671226A529D60069F732 /* GetBpressureindexData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39670C26A529D60069F732 /* GetBpressureindexData.swift */; };
+		4D39671326A529D60069F732 /* GetAiogetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D39670D26A529D60069F732 /* GetAiogetData.swift */; };
+		68999CC54ADD1C61F17011CB /* Pods_OcareTestOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B7983426E2C5A7228782AC /* Pods_OcareTestOTP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +46,38 @@
 		4D3966DE26A51E300069F732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D3966E126A51E300069F732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3966E326A51E300069F732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D3966EC26A529A00069F732 /* NetworkManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManage.swift; sourceTree = "<group>"; };
+		4D3966EE26A529AA0069F732 /* API Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Common.swift"; sourceTree = "<group>"; };
+		4D3966EF26A529AB0069F732 /* APIFunctione.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFunctione.swift; sourceTree = "<group>"; };
+		4D3966F326A529BF0069F732 /* AiodelBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AiodelBody.swift; sourceTree = "<group>"; };
+		4D3966F426A529C00069F732 /* CommonindexuploadBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonindexuploadBody.swift; sourceTree = "<group>"; };
+		4D3966F526A529C00069F732 /* PassmodifyBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassmodifyBody.swift; sourceTree = "<group>"; };
+		4D3966F626A529C00069F732 /* AiogetuploadBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AiogetuploadBody.swift; sourceTree = "<group>"; };
+		4D3966F726A529C00069F732 /* DatamodifyBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatamodifyBody.swift; sourceTree = "<group>"; };
+		4D3966F826A529C10069F732 /* GoalindexmodifyBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalindexmodifyBody.swift; sourceTree = "<group>"; };
+		4D3966F926A529C10069F732 /* GetDataBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDataBody.swift; sourceTree = "<group>"; };
+		4D3966FA26A529C10069F732 /* ForgetBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetBody.swift; sourceTree = "<group>"; };
+		4D3966FB26A529C10069F732 /* BpressureindexuploadBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BpressureindexuploadBody.swift; sourceTree = "<group>"; };
+		4D3966FC26A529C20069F732 /* WeightindexuploadBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightindexuploadBody.swift; sourceTree = "<group>"; };
+		4D39670826A529D50069F732 /* GetWeightindexData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetWeightindexData.swift; sourceTree = "<group>"; };
+		4D39670926A529D60069F732 /* GetCommonindexData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCommonindexData.swift; sourceTree = "<group>"; };
+		4D39670A26A529D60069F732 /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		4D39670B26A529D60069F732 /* GetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		4D39670C26A529D60069F732 /* GetBpressureindexData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBpressureindexData.swift; sourceTree = "<group>"; };
+		4D39670D26A529D60069F732 /* GetAiogetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAiogetData.swift; sourceTree = "<group>"; };
+		4DEE6C4026A90889005783B1 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main.strings"; sourceTree = "<group>"; };
+		4DEE6C4126A9088B005783B1 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4DEE6C4226A90890005783B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		4DEE6C4326A90891005783B1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4DEE6C4426A90897005783B1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		4DEE6C4526A90897005783B1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4DEE6C4626A9089F005783B1 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
+		4DEE6C4726A908A0005783B1 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		4DEE6C4826A908B0005783B1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		4DEE6C4926A908B1005783B1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		704301AF268F7B4BD150D013 /* Pods-OcareTestOTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OcareTestOTP.release.xcconfig"; path = "Target Support Files/Pods-OcareTestOTP/Pods-OcareTestOTP.release.xcconfig"; sourceTree = "<group>"; };
+		F0B7983426E2C5A7228782AC /* Pods_OcareTestOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OcareTestOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F506E4CC86DB7918C4669CA8 /* Pods-OcareTestOTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OcareTestOTP.debug.xcconfig"; path = "Target Support Files/Pods-OcareTestOTP/Pods-OcareTestOTP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68999CC54ADD1C61F17011CB /* Pods_OcareTestOTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +97,8 @@
 			children = (
 				4D3966D126A51E2B0069F732 /* OcareTestOTP */,
 				4D3966D026A51E2B0069F732 /* Products */,
+				626A1619B133C5D148C2C0B8 /* Pods */,
+				81DF276AD4AD20A8662768E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +113,7 @@
 		4D3966D126A51E2B0069F732 /* OcareTestOTP */ = {
 			isa = PBXGroup;
 			children = (
+				4D3966EB26A529980069F732 /* APi */,
 				4D3966D226A51E2C0069F732 /* AppDelegate.swift */,
 				4D3966D426A51E2C0069F732 /* SceneDelegate.swift */,
 				4D3966D626A51E2C0069F732 /* ViewController.swift */,
@@ -70,6 +126,65 @@
 			path = OcareTestOTP;
 			sourceTree = "<group>";
 		};
+		4D3966EB26A529980069F732 /* APi */ = {
+			isa = PBXGroup;
+			children = (
+				4D39670726A529C80069F732 /* getData */,
+				4D3966F226A529B70069F732 /* body */,
+				4D3966EE26A529AA0069F732 /* API Common.swift */,
+				4D3966EF26A529AB0069F732 /* APIFunctione.swift */,
+				4D3966EC26A529A00069F732 /* NetworkManage.swift */,
+			);
+			path = APi;
+			sourceTree = "<group>";
+		};
+		4D3966F226A529B70069F732 /* body */ = {
+			isa = PBXGroup;
+			children = (
+				4D3966F326A529BF0069F732 /* AiodelBody.swift */,
+				4D3966F626A529C00069F732 /* AiogetuploadBody.swift */,
+				4D3966FB26A529C10069F732 /* BpressureindexuploadBody.swift */,
+				4D3966F426A529C00069F732 /* CommonindexuploadBody.swift */,
+				4D3966F726A529C00069F732 /* DatamodifyBody.swift */,
+				4D3966FA26A529C10069F732 /* ForgetBody.swift */,
+				4D3966F926A529C10069F732 /* GetDataBody.swift */,
+				4D3966F826A529C10069F732 /* GoalindexmodifyBody.swift */,
+				4D3966F526A529C00069F732 /* PassmodifyBody.swift */,
+				4D3966FC26A529C20069F732 /* WeightindexuploadBody.swift */,
+			);
+			path = body;
+			sourceTree = "<group>";
+		};
+		4D39670726A529C80069F732 /* getData */ = {
+			isa = PBXGroup;
+			children = (
+				4D39670D26A529D60069F732 /* GetAiogetData.swift */,
+				4D39670C26A529D60069F732 /* GetBpressureindexData.swift */,
+				4D39670926A529D60069F732 /* GetCommonindexData.swift */,
+				4D39670B26A529D60069F732 /* GetData.swift */,
+				4D39670826A529D50069F732 /* GetWeightindexData.swift */,
+				4D39670A26A529D60069F732 /* ResponseData.swift */,
+			);
+			path = getData;
+			sourceTree = "<group>";
+		};
+		626A1619B133C5D148C2C0B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F506E4CC86DB7918C4669CA8 /* Pods-OcareTestOTP.debug.xcconfig */,
+				704301AF268F7B4BD150D013 /* Pods-OcareTestOTP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		81DF276AD4AD20A8662768E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0B7983426E2C5A7228782AC /* Pods_OcareTestOTP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D3966E626A51E300069F732 /* Build configuration list for PBXNativeTarget "OcareTestOTP" */;
 			buildPhases = (
+				FE1E6E683D08FF564BB8870F /* [CP] Check Pods Manifest.lock */,
 				4D3966CB26A51E2B0069F732 /* Sources */,
 				4D3966CC26A51E2B0069F732 /* Frameworks */,
 				4D3966CD26A51E2B0069F732 /* Resources */,
+				BB2B2207E13A0098024B363C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,6 +228,11 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-HK",
+				"zh-Hans",
+				"zh-Hant",
+				"en-GB",
+				ja,
 			);
 			mainGroup = 4D3966C626A51E2B0069F732;
 			productRefGroup = 4D3966D026A51E2B0069F732 /* Products */;
@@ -135,15 +257,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB2B2207E13A0098024B363C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OcareTestOTP/Pods-OcareTestOTP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OcareTestOTP/Pods-OcareTestOTP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OcareTestOTP/Pods-OcareTestOTP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE1E6E683D08FF564BB8870F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OcareTestOTP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D3966CB26A51E2B0069F732 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3966F026A529AB0069F732 /* API Common.swift in Sources */,
+				4D39670026A529C20069F732 /* AiogetuploadBody.swift in Sources */,
+				4D39671026A529D60069F732 /* ResponseData.swift in Sources */,
+				4D39670326A529C20069F732 /* GetDataBody.swift in Sources */,
+				4D39670426A529C20069F732 /* ForgetBody.swift in Sources */,
+				4D39671126A529D60069F732 /* GetData.swift in Sources */,
 				4D3966D726A51E2C0069F732 /* ViewController.swift in Sources */,
+				4D39670626A529C20069F732 /* WeightindexuploadBody.swift in Sources */,
+				4D39671326A529D60069F732 /* GetAiogetData.swift in Sources */,
+				4D39670F26A529D60069F732 /* GetCommonindexData.swift in Sources */,
+				4D3966ED26A529A00069F732 /* NetworkManage.swift in Sources */,
+				4D3966FE26A529C20069F732 /* CommonindexuploadBody.swift in Sources */,
+				4D39671226A529D60069F732 /* GetBpressureindexData.swift in Sources */,
 				4D3966D326A51E2C0069F732 /* AppDelegate.swift in Sources */,
+				4D3966F126A529AB0069F732 /* APIFunctione.swift in Sources */,
+				4D39670126A529C20069F732 /* DatamodifyBody.swift in Sources */,
 				4D3966DD26A51E2C0069F732 /* OcareTestOTP.xcdatamodeld in Sources */,
 				4D3966D526A51E2C0069F732 /* SceneDelegate.swift in Sources */,
+				4D3966FF26A529C20069F732 /* PassmodifyBody.swift in Sources */,
+				4D39670226A529C20069F732 /* GoalindexmodifyBody.swift in Sources */,
+				4D3966FD26A529C20069F732 /* AiodelBody.swift in Sources */,
+				4D39670526A529C20069F732 /* BpressureindexuploadBody.swift in Sources */,
+				4D39670E26A529D60069F732 /* GetWeightindexData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +337,11 @@
 			isa = PBXVariantGroup;
 			children = (
 				4D3966D926A51E2C0069F732 /* Base */,
+				4DEE6C4026A90889005783B1 /* zh-HK */,
+				4DEE6C4226A90890005783B1 /* zh-Hans */,
+				4DEE6C4426A90897005783B1 /* zh-Hant */,
+				4DEE6C4626A9089F005783B1 /* en-GB */,
+				4DEE6C4826A908B0005783B1 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -162,6 +350,11 @@
 			isa = PBXVariantGroup;
 			children = (
 				4D3966E126A51E300069F732 /* Base */,
+				4DEE6C4126A9088B005783B1 /* zh-HK */,
+				4DEE6C4326A90891005783B1 /* zh-Hans */,
+				4DEE6C4526A90897005783B1 /* zh-Hant */,
+				4DEE6C4726A908A0005783B1 /* en-GB */,
+				4DEE6C4926A908B1005783B1 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -173,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -234,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -287,6 +482,7 @@
 		};
 		4D3966E726A51E300069F732 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F506E4CC86DB7918C4669CA8 /* Pods-OcareTestOTP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +502,7 @@
 		};
 		4D3966E826A51E300069F732 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704301AF268F7B4BD150D013 /* Pods-OcareTestOTP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
